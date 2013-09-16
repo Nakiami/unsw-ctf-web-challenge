@@ -6,7 +6,7 @@ if (!defined('IN_FILE')) {
 
 require('db.inc.php');
 
-define('CONFIG_ABS_PATH', '/var/www/webchallenge/');
+define('CONFIG_ABS_PATH', dirname(dirname(__FILE__)).'/');
 define('CONFIG_FILE_UPLOAD_PATH', CONFIG_ABS_PATH . 'upload');
 
 define('CONFIG_SITE_NAME', 'Bucky\'s pony appreciation society');
