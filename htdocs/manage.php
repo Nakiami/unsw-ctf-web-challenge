@@ -15,7 +15,7 @@ if (isset($_GET['view'])) {
     sectionSubHead($_GET['view']);
 
     // security, bitch
-    $_GET['view'] = substr($_GET['view'], 0, 23);
+    $_GET['view'] = substr($_GET['view'], 0, 22);
 
     // TODO FIXME
     // this might be dangerous but it's okay - only admins have access to this page anyway

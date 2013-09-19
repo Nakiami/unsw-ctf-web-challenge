@@ -62,7 +62,7 @@ else {
             <td><a href="user.php?id=',$message['id'],'">',htmlspecialchars($message['receiver_username']),'</a></td>
             <td><a href="messages.php?view_id=',$message['id'],'">',htmlspecialchars($message['subject']),'</a></td>
             <td>',getDateTime($message['added']),'</td>
-            <td>',shortDescription($message['body'], 70),'</td>
+            <td>',htmlspecialchars(shortDescription($message['body'], 70)),'</td>
         </tr>
         ';
     }
