@@ -31,6 +31,8 @@ function shortDescription ($string, $len) {
         $string .= ' ...';
     }
 
+    $string = str_replace('script', 'NOSCRIPT', $string);
+
     return $string;
 }
 
