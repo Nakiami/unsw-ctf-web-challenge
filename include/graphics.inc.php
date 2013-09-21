@@ -101,7 +101,7 @@ function foot () {
     </div>
 
 </div> <!-- /container -->
-'.(getIP() != '127.0.0.1' ?
+'.(getIP() != '127.0.0.1' && !$_SESSION['id'] ?
 '<audio autoplay loop>
     <source src="intro.ogg" type="audio/ogg" preload="auto" autoplay="autoplay">
 </audio>' : ''
