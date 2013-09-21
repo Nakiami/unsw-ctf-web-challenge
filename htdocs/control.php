@@ -10,7 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_POST['action'] == 'edit') {
 
         // no need to escape "sex" since the only two possible values are defined in the form
-        $db->query('UPDATE users SET sex = "'.$_POST['sex'].'", description = "'.$db->quote($_POST['description']).'", website = "'.$db->quote($_POST['website']).'" WHERE id = '.$db->quote($_SESSION['id'])) or die(sqlError(__FILE__, __LINE__));
+        $db->query('
+            UPDATE
+                users
+            SET sex = "'.$_POST['sex'].'",
+            description = '.$db->quote($_POST['description']).',
+            website = '.$db->quote($_POST['website']).'
+            WHERE id = '.$_SESSION['id'])
+        or die(sqlError(__FILE__, __LINE__));
 
         header('location: control.php?generic_success=1');
         exit();
