@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: ../include/config.inc.php
+Disallow: ../include/general.inc.php
 Disallow: /backup/
 Disallow: /tmp/
