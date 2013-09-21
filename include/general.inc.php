@@ -14,7 +14,7 @@ require(CONFIG_ABS_PATH. 'include/Cache/Lite.php');
 // connect to database
 $db = new PDO(DB_ENGINE.':host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_USER, DB_PASSWORD, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
 //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+//$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
 // TODO remove this from production code
 ini_set('display_errors', 1);
