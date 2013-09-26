@@ -72,7 +72,7 @@ function head($title = '') {
 </div>
 
 <div id="secret" class="alert alert-success">
-    <h1>5s1780o49o9o0rq5oq4on8n0q4sp49r2nr</h1>
+    <h1>gurSvefgXrlVf:5s1780o49o9o0rq5oq4on8n0q4sp49r2nr</h1>
 </div>
 
     <?php
